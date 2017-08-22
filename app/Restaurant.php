@@ -12,6 +12,12 @@ class Restaurant extends Model
         'photo'
     ];
 
+    /**
+     * @var array
+     *
+     * Criando um campo virtual com o mutator do laravel
+     * getPhotoFullUrlAttribute corresponde a photo_full_url
+     */
     protected $appends = ['photo_full_url'];
 
     protected function getPhotoFullUrlAttribute()

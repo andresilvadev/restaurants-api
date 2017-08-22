@@ -12,7 +12,7 @@ trait UploadObserverTrait
         $field = $this->field;
 
         if($model->$field->isValid()){
-            $this->upload();
+            $this->upload($model);
         }
 
     }

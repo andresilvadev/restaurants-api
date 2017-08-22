@@ -14,7 +14,8 @@
 Dusterio\LumenPassport\LumenPassport::routes($app);
 
 $app->get('/', function () use ($app) {
-    return $app->version();
+//    return $app->version();
+    return view('teste');
 });
 
 $app->group([
