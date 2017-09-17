@@ -30,4 +30,6 @@ $app->group([
     $app->put('restaurants/{id}', 'RestaurantsController@update');
     $app->post('restaurants/{id}', 'RestaurantsController@update');
     $app->delete('restaurants/{id}', 'RestaurantsController@destroy');
+
+    $app->get('auth/me', 'AuthController@me');
 });

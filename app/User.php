@@ -31,5 +31,8 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
         'password',
     ];
 
-
+    public function restaurant()
+    {
+        return $this->hasOne('App\Restaurant');
+    }
 }
